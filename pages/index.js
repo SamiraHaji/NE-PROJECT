@@ -4,13 +4,18 @@ import {useRouter} from 'next/router';
 export default function Home() {
   const router = useRouter();
   const agenceRef = useRef(null);
+  const servicesRef = useRef(null);
+  const contactRef = useRef(null);
 
-  const search =(e) => {
+  const remerciements =(e) => {
   e.preventDefault(); 
+  
   const term = agenceRef.current.value;
-  const term1 =serviceseRef.current.value;
+  const term1 =servicesRef.current.value;
   const term2 =contactRef.current.value;
   if(!term) return;
+  if(!term1) return;
+  if(!term2) return;
 
 router.push(`/agence?term=${term}`);
 
