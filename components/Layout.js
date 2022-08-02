@@ -12,10 +12,12 @@ const Layout = ({children}) => {
       </Head>
       <div className="flex w-full max-w-2xl mx-auto">
       <Sidebar/>
+      
       <main className="flex flex-col w-full items-center justify-center bg-gray-300">
       <Logo />
       {children} 
       </main>
+      
     </div>
 
 

@@ -19,18 +19,14 @@ function Sidebar() {
         <li> <Link href="/agence"><a className="font-bold  text-gray-400 hover:text-black"> AGENCE </a></Link></li>
         <li><Link href="/services"><a className="font-bold  text-gray-400 hover:text-black"> SERVICES </a></Link></li>
         <li><Link href="/contact"><a className="font-bold  text-gray-400 hover:text-black"> CONTACT </a></Link></li>
+        <div>
+    <Footer/>
+  </div>
       </ul>
-   
       </aside> 
-  
       </div>
-      <div>
-      <Footer/>
     </div>
-    </div>
-
-    </div>
-
+  </div>
   )
 }
 
